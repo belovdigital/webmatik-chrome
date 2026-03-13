@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icons/icon128.png" alt="Webmatik logo" width="80" />
+  <img src="https://webmatik.ai/logo.png" alt="Webmatik" width="200" />
 </p>
 
 <h1 align="center">Webmatik — AI Website Audit</h1>
