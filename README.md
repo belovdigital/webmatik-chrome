@@ -29,9 +29,9 @@
 
 ## 🖥️ Screenshots
 
-| Connect | Ready | Result |
-|---------|-------|--------|
-| Link your Webmatik account | See the current tab URL, hit Run Audit | Growth Score + grade with a link to the full report |
+| Ready | Analyzing | Result |
+|:-----:|:---------:|:------:|
+| ![Ready](promo/webmatik-chrome1.png) | ![Analyzing](promo/webmatik-chrome2.png) | ![Result](promo/webmatik-chrome3.png) |
 
 ## 🔧 How It Works
 
