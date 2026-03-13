@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-dot"></div>
+      <span class="logo-text">WEBMATIK</span>
+    </div>
+
+    <!-- States -->
+    <div id="state-loading" class="state">
+      <div class="spinner"></div>
+    </div>
+
+    <div id="state-connect" class="state" style="display:none;">
+      <div class="icon-circle purple">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m9.86-3.06a4.5 4.5 0 00-1.242-7.244l-4.5-4.5a4.5 4.5 0 00-6.364 6.364L4.34 8.374"/>
+        </svg>
+      </div>
+      <p class="subtitle">Connect your Webmatik account to run audits.</p>
+      <button id="btn-connect" class="btn-primary">Connect to Webmatik</button>
+    </div>
+
+    <div id="state-ready" class="state" style="display:none;">
+      <div class="site-url" id="site-url"></div>
+      <button id="btn-audit" class="btn-primary">Run Audit</button>
+      <button id="btn-disconnect" class="btn-link">Disconnect</button>
+    </div>
+
+    <div id="state-running" class="state" style="display:none;">
+      <div class="spinner"></div>
+      <p class="subtitle" id="running-status">Starting audit...</p>
+    </div>
+
+    <div id="state-result" class="state" style="display:none;">
+      <div class="score-row">
+        <div class="score" id="score-value"></div>
+        <div class="score-info">
+          <div class="score-label">Growth Score</div>
+          <div class="score-grade" id="score-grade"></div>
+        </div>
+      </div>
+      <a id="report-link" class="btn-primary" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">View Full Report</a>
+      <button id="btn-new-audit" class="btn-secondary">Run New Audit</button>
+    </div>
+
+    <div id="state-error" class="state" style="display:none;">
+      <div class="icon-circle red">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </div>
+      <p class="error-msg" id="error-msg"></p>
+      <button id="btn-retry" class="btn-secondary">Try Again</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
